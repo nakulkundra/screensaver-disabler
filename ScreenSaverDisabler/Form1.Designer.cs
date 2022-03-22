@@ -1,4 +1,4 @@
-﻿namespace Monon
+namespace Monon
 {
     partial class FormMain
     {
@@ -20,14 +20,10 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
-
-        /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
-        /// </summary>
+      
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.keepOnSw = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
@@ -35,11 +31,11 @@
             // 
             this.keepOnSw.AutoSize = true;
             this.keepOnSw.Location = new System.Drawing.Point(10, 11);
-            this.keepOnSw.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.keepOnSw.Margin = new System.Windows.Forms.Padding(2);
             this.keepOnSw.Name = "keepOnSw";
-            this.keepOnSw.Size = new System.Drawing.Size(126, 17);
+            this.keepOnSw.Size = new System.Drawing.Size(103, 17);
             this.keepOnSw.TabIndex = 0;
-            this.keepOnSw.Text = "Disable ScreenSaver";
+            this.keepOnSw.Text = "Enable No Lock";
             this.keepOnSw.UseVisualStyleBackColor = true;
             this.keepOnSw.CheckedChanged += new System.EventHandler(this.keepOnSw_CheckedChanged);
             // 
@@ -47,11 +43,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(224, 39);
             this.Controls.Add(this.keepOnSw);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormMain";
-            this.Text = "Screensaver Disabler";
+            this.ShowInTaskbar = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Text = "No Lock v2";
+            this.TopMost = true;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMain_FormClosed);
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.ResumeLayout(false);
@@ -59,7 +64,7 @@
 
         }
 
-        #endregion
+
 
         private System.Windows.Forms.CheckBox keepOnSw;
     }
